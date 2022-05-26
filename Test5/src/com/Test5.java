@@ -9,7 +9,7 @@ public class Test5 {
 	
 	public static void main(String[] args) {
 		
-		/*int a = 30;
+		int a = 30;
 		int b = 65;
 		
 		System.out.println("Before: a:"+a+" b:"+b);
@@ -30,13 +30,13 @@ public class Test5 {
 		intL.stream().filter((e) -> e.equals(30)).forEach((e1) -> System.out.println(e1));
 		intL.stream().map((e2) -> e2 *10).forEach((e3) -> System.out.println(e3));
 		int result = intL.stream().reduce(0, (a1,b1) -> a1+b1);
-		System.out.println("Reduce Result: "+result);*/
+		System.out.println("Reduce Result: "+result);
 		
-		List<Employee> emps = Arrays.asList(new Employee("Naveen",1,100000),
-											new Employee("Kumar",2,30000),
-											new Employee("Daniel",3,15000),
-											new Employee("Prince",4,20000),
-											new Employee("Kaling",5,98000));
+//		List<Employee> emps = Arrays.asList(new Employee("Naveen",1,100000),
+//											new Employee("Kumar",2,30000),
+//											new Employee("Daniel",3,15000),
+//											new Employee("Prince",4,20000),
+//											new Employee("Kaling",5,98000));
 		
 		/*Optional<Employee> maxEResult = emps.stream().max(Comparator.comparingInt(Employee::getSal));
 		System.out.println("Max Value: "+maxEResult.get().getName());
@@ -52,8 +52,8 @@ public class Test5 {
 		emps.stream().map((e2) -> e2.getSal() * 2).forEach((e3) -> {
 			System.out.println(e3);
 		});*/
-		int result = emps.stream().reduce(0, (a5,b5) -> a5+b5.getId(), Integer:: sum);
-		System.out.println(result);
+		//int result = emps.stream().reduce(0, (a5,b5) -> a5+b5.getId(), Integer:: sum);
+		//System.out.println(result);
 	}
 	
 
